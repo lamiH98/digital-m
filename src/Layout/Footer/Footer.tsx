@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
 				<Row>
 					<Col md={4}>
 						<div className="footer-right">
-							<h2>LAM DIGITAL</h2>
+							<h2>LAM DIGITA</h2>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem tempore est nihil sed adipisci.</p>
 							<ul className='list-unstyled d-flex'>
 								<li><FaFacebookF /></li>
