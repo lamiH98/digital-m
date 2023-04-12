@@ -1,0 +1,215 @@
+.news {
+  margin-top: 90px;
+}
+.news .post-single {
+  position: relative;
+  margin-bottom: 30px;
+}
+.news .post-single .post-img {
+  overflow: hidden;
+}
+.news .post-single .post-img img {
+  width: 100%;
+}
+.news .post-single .post-content {
+  box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.1);
+  padding: 50px 45px;
+}
+.news .post-single .post-content .post-info .date {
+  margin-right: 20px;
+}
+.news .post-single .post-content .post-info span {
+  margin-left: 8px;
+  font-weight: bold;
+}
+.news .post-single .post-content .post-title {
+  color: #282828;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  font-weight: bold;
+}
+.news .post-single .post-content .post-title:hover {
+  color: #c0282a;
+}
+.news .post-single .post-content p {
+  font-size: 16px;
+  line-height: 1.7em;
+  font-weight: 400;
+  margin: 0 0 15px;
+  margin-bottom: 20px;
+}
+.news .post-single .post-content .author {
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+.news .post-single .post-content .author .author-box img {
+  border-radius: 50px;
+  width: 40px;
+  margin-right: 16px;
+}
+.news .post-single .post-content .author .author-box .author-name {
+  color: #c0282a;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.news .post-single .post-content .author .author-box .author-name:hover {
+  color: #222;
+}
+.news .post-single .post-content .author .read-more {
+  cursor: pointer;
+}
+.news .post-single .post-content .author .read-more svg {
+  color: #c0282a;
+  transition: 0.5s;
+}
+.news .post-single .post-content .author .read-more span {
+  font-weight: bold;
+  color: #c0282a;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+.news .post-single .post-content .author .read-more:hover span, .news .post-single .post-content .author .read-more:hover svg {
+  color: #222;
+}
+.news .right-side .right-box {
+  border: 1px solid #e8e8e8;
+  margin-bottom: 35px;
+  padding: 40px;
+}
+.news .right-side .about-box .about-img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.news .right-side .about-box h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.news .right-side .about-box p {
+  line-height: 1.7em;
+}
+.news .right-side .about-box ul {
+  margin-top: 30px;
+}
+.news .right-side .about-box ul li {
+  margin-right: 14px;
+  opacity: 0.5;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.news .right-side .about-box ul li:hover {
+  opacity: 1;
+  color: #c0282a;
+}
+.news .right-side .categories-box ul li {
+  position: relative;
+  color: #fff;
+  font-size: 14px;
+  background: #152136;
+  padding: 10px 30px;
+  border-radius: 25px;
+  line-height: 30px;
+  margin-top: 20px;
+  font-size: 17px;
+}
+.news .right-side .social-links ul li {
+  background-color: #282828;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  text-align: center;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1);
+}
+.news .right-side .social-links ul li:hover {
+  transform: scale(1.2);
+  background: #c0282a;
+}
+.news .right-side .instagram-feeds ul {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.news .right-side .instagram-feeds ul li {
+  cursor: pointer;
+  position: relative;
+}
+.news .right-side .instagram-feeds ul li img {
+  width: 100%;
+  height: 100px;
+}
+.news .right-side .instagram-feeds ul li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 100px;
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(90deg, #d1641a 0%, #c0282a 100%);
+  transform: scale(0);
+  transition: 0.5s;
+}
+.news .right-side .instagram-feeds ul li:hover::before {
+  content: "\f16d";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  transform: scale(1);
+}
+.news .right-side .popular-tags ul {
+  flex-wrap: wrap;
+}
+.news .right-side .popular-tags ul li {
+  cursor: pointer;
+  position: relative;
+  margin: 8px 10px;
+  padding: 0px 23px;
+  color: #25283a;
+  text-align: center;
+  font-size: 13px !important;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+  background-color: #edf1f5;
+  border-radius: 15px;
+}
+.news .right-side-box-title {
+  position: relative;
+  margin-bottom: 40px;
+  color: #282828;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: left;
+  padding-left: 50px;
+}
+.news .right-side-box-title::before {
+  position: absolute;
+  content: "";
+  left: 32px;
+  top: 11px;
+  width: 5px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #c0282a;
+}
+.news .right-side-box-title::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 12px;
+  width: 30px;
+  height: 3px;
+  background-color: #c0282a;
+}/*# sourceMappingURL=News.css.map */

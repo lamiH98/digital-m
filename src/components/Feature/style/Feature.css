@@ -1,0 +1,64 @@
+.features {
+  margin-top: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f4f4f4;
+}
+.features .features-header .subTitle {
+  font-weight: bold;
+  position: relative;
+  padding-left: 70px;
+  padding-right: 70px;
+  display: inline-block;
+}
+.features .features-header .subTitle::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 12px;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #d1641a 0%, #c0282a 100%);
+}
+.features .features-header .subTitle::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 12px;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #d1641a 0%, #c0282a 100%);
+}
+.features .features-header .title {
+  position: relative;
+  display: block;
+  font-size: 60px;
+  line-height: 75px;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: -3px;
+}
+.features .feature-single {
+  margin-top: 40px;
+}
+.features .feature-single .feature-img {
+  float: left;
+  position: relative;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(40, 40, 40, 0.2);
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  margin-right: 30px;
+}
+.features .feature-single h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #282828;
+  margin-bottom: 10px;
+}
+.features .feature-single p {
+  color: #282828;
+}/*# sourceMappingURL=Feature.css.map */

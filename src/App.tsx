@@ -1,25 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header/Header';
+import NavHeader from './components/Navbar/NavbarComponent';
+import Benefits from './components/Benefits/Benefits';
+import About from './components/About/About';
+import Services from './components/Services/Services';
+import Works from './components/Works/Works';
+import Video from './components/Video/Video';
+import Choose from './components/ChooseUs/Choose';
+import Team from './components/Team/Team';
+import Contact from './components/Contact/Contact';
+import Blog from './components/Blog/Blog';
+import Sponsors from './components/Sponsors/Sponsors';
+import Footer from './components/Footer/Footer';
 
-function App() {
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavHeader />
+      <Header />
+      <Benefits />
+      <About />
+      <Services />
+      <Works />
+      <Video />
+      <Choose />
+      <Team />
+      <Contact />
+      <Blog />
+      <Sponsors />
+      <Footer />
+    </>
   );
 }
 

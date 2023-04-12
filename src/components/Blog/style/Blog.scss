@@ -1,0 +1,91 @@
+@import '../../../style/helpers/variables';
+
+.blog{
+    margin-top: 120px;
+    .blog-header{
+        .subTitle{
+            font-weight: bold;
+            position: relative;
+            padding-left: 70px;
+            padding-right: 70px;
+            display: inline-block;
+            &::after{
+                position: absolute;
+                content: "";
+                right: 0;
+                top: 12px;
+                width: 50px;
+                height: 3px;
+                background: $backgroundColor;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 12px;
+                width: 50px;
+                height: 3px;
+                background: linear-gradient(90deg, #d1641a 0%, #c0282a 100%);
+            }
+        }
+        .title{
+            position: relative;
+            display: block;
+            font-size: 60px;
+            line-height: 75px;
+            font-weight: 700;
+            text-transform: capitalize;
+            letter-spacing: -3px;
+            @media (max-width: 551px) {
+                font-size: 45px;
+                width: 100%;
+            }
+        }
+    }
+    .blog-single{
+        box-shadow: 0px 8px 16px 0px rgb(40 40 40 / 10%);
+        padding-bottom: 40px;
+        margin-top: 40px;
+        .blog-img{
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .category{
+                position: absolute;
+                top: 40px;
+                right: 0;
+                background: $backgroundColor;
+                color: #fff;
+                padding: 10px 30px;
+                font-weight: bold;
+            }
+        }
+        .blog-single-header{
+            padding-left: 30px;
+            margin-bottom: 10px;
+            margin-top: 14px;
+            .date, .name{
+                margin-right: 20px;
+                span{
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+                .icon{
+                    font-size: 20px;
+                    margin-right: 8px;
+                }
+            }
+        }
+        .blog-title{
+            padding-left: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.6s;
+            margin-top: 20px;
+            &:hover{
+                color: $mainColor;
+            }
+        }
+    }
+}

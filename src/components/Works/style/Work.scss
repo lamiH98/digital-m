@@ -1,0 +1,99 @@
+@import '../../../style/helpers/variables';
+
+.works{
+    margin-top: 120px;
+    .work-title-section{
+        h6{
+            position: relative;
+            padding-left: 70px;
+            font-weight: bold;
+            font-size: 18px;
+            &::after{
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 12px;
+                width: 50px;
+                height: 2px;
+                background-color: $mainColor;
+            }
+        }
+        h2{
+            font-size: 55px;
+            font-weight: bold;
+            @media (max-width: 551px) {
+                font-size: 36px;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .filter-section{
+        flex-wrap: wrap;
+        span{
+            margin-right: 20px;
+            display: inline-block;
+            padding: 10px 40px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        span.active{
+            color: #fff !important;
+            background: $backgroundColor;
+        }
+    }
+    .work-single{
+        margin-top: 40px;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        &:hover .work-content{
+            opacity: 1;
+            visibility: visible;
+        }
+        &:hover .work-content h5{
+            transform: translateX(0);
+        }
+        &:hover .work-content h6{
+            transform: translateY(0);
+        }
+        .work-content{
+            position: absolute;
+            bottom: 0;
+            background-color: #fff;
+            width: 90%;
+            padding: 20px 0;
+            padding-left: 24px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.7s;
+            h6{
+                color: $mainColor;
+                position: relative;
+                padding-left: 40px;
+                transform: translateX(20px);
+                transition: 0.8s;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 12px;
+                    width: 30px;
+                    height: 2px;
+                    background-color: #c0282a;
+                }
+            }
+            h5{
+                font-weight: bold;
+                cursor: pointer;
+                transition: 0.6s;
+                transform: translateY(16px);
+                &:hover{
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}

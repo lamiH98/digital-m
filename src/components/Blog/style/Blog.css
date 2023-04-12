@@ -1,0 +1,89 @@
+.blog {
+  margin-top: 120px;
+}
+.blog .blog-header .subTitle {
+  font-weight: bold;
+  position: relative;
+  padding-left: 70px;
+  padding-right: 70px;
+  display: inline-block;
+}
+.blog .blog-header .subTitle::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 12px;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #d1641a 0%, #c0282a 100%);
+}
+.blog .blog-header .subTitle::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 12px;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #d1641a 0%, #c0282a 100%);
+}
+.blog .blog-header .title {
+  position: relative;
+  display: block;
+  font-size: 60px;
+  line-height: 75px;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: -3px;
+}
+@media (max-width: 551px) {
+  .blog .blog-header .title {
+    font-size: 45px;
+    width: 100%;
+  }
+}
+.blog .blog-single {
+  box-shadow: 0px 8px 16px 0px rgba(40, 40, 40, 0.1);
+  padding-bottom: 40px;
+  margin-top: 40px;
+}
+.blog .blog-single .blog-img {
+  position: relative;
+}
+.blog .blog-single .blog-img img {
+  width: 100%;
+}
+.blog .blog-single .blog-img .category {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: linear-gradient(90deg, #d1641a 0%, #c0282a 100%);
+  color: #fff;
+  padding: 10px 30px;
+  font-weight: bold;
+}
+.blog .blog-single .blog-single-header {
+  padding-left: 30px;
+  margin-bottom: 10px;
+  margin-top: 14px;
+}
+.blog .blog-single .blog-single-header .date, .blog .blog-single .blog-single-header .name {
+  margin-right: 20px;
+}
+.blog .blog-single .blog-single-header .date span, .blog .blog-single .blog-single-header .name span {
+  font-weight: bold;
+  font-size: 14px;
+}
+.blog .blog-single .blog-single-header .date .icon, .blog .blog-single .blog-single-header .name .icon {
+  font-size: 20px;
+  margin-right: 8px;
+}
+.blog .blog-single .blog-title {
+  padding-left: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.6s;
+  margin-top: 20px;
+}
+.blog .blog-single .blog-title:hover {
+  color: #c0282a;
+}/*# sourceMappingURL=Blog.css.map */

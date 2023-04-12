@@ -1,0 +1,112 @@
+body {
+  overflow-x: hidden;
+}
+
+.about {
+  margin-top: 180px;
+}
+.about .about-img {
+  position: relative;
+}
+.about .about-img img {
+  width: 100%;
+}
+.about .about-img::after {
+  position: absolute;
+  content: "";
+  right: 40px;
+  top: -40px;
+  width: 200px;
+  height: 200px;
+  background: url(../../../images/about/about-2.png);
+  z-index: -1;
+}
+.about .about-img::before {
+  position: absolute;
+  content: "";
+  border: 5px solid #fff;
+  background-image: -webkit-linear-gradient(0deg, rgb(209, 100, 26) 0%, rgb(192, 40, 42) 100%);
+  width: 100px;
+  height: 108px;
+  left: -30px;
+  top: -40px;
+  z-index: 7;
+}
+.about .about-img p {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  background: linear-gradient(90deg, #d1641a 0%, #c0282a 100%) !important;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0px 8px 16px 0px rgba(255, 100, 0, 0.3);
+  font-weight: bold;
+  font-size: 40px;
+}
+.about .about-content {
+  margin-top: 40px;
+  margin-left: 30px;
+}
+.about .about-content .about-subTitle {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  padding-left: 70px;
+}
+.about .about-content .about-subTitle::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 12px;
+  width: 50px;
+  height: 2px;
+  background-color: #c0282a;
+}
+.about .about-content .about-title {
+  position: relative;
+  font-size: 54px;
+  line-height: 75px;
+  font-weight: bold;
+  letter-spacing: -3px;
+  width: 70%;
+  margin-bottom: 30px;
+}
+@media (max-width: 551px) {
+  .about .about-content .about-title {
+    font-size: 34px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+}
+.about .about-content p {
+  margin-bottom: 60px;
+  line-height: 1.7;
+}
+.about .about-content .info .info-box {
+  box-shadow: 11px 0px 20px 3px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  text-align: center;
+}
+.about .about-content .info .info-box img {
+  width: 75px;
+  margin-bottom: 20px;
+}
+.about .about-content .info .info-box .title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.about .about-content .info .info-box span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.about .about-content .info .info-box:last-child {
+  margin-left: 30px;
+}/*# sourceMappingURL=About.css.map */

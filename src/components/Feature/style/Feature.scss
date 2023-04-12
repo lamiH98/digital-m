@@ -1,0 +1,68 @@
+@import '../../../style/helpers/variables';
+
+.features{
+    margin-top: 120px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #f4f4f4;
+    .features-header{
+        .subTitle{
+            font-weight: bold;
+            position: relative;
+            padding-left: 70px;
+            padding-right: 70px;
+            display: inline-block;
+            &::before{
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 12px;
+                width: 50px;
+                height: 3px;
+                background: $backgroundColor;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                right: 0;
+                top: 12px;
+                width: 50px;
+                height: 3px;
+                background: $backgroundColor;
+            }
+        }
+        .title{
+            position: relative;
+            display: block;
+            font-size: 60px;
+            line-height: 75px;
+            font-weight: 700;
+            text-transform: capitalize;
+            letter-spacing: -3px;
+        }
+    }
+    .feature-single{
+        margin-top: 40px;
+        .feature-img{
+            float: left;
+            position: relative;
+            background-color: #fff;
+            border-radius: 50px;
+            box-shadow: 0px 8px 16px 0px rgba(40, 40, 40, 0.2);
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            margin-right: 30px;
+        }
+        h2{
+            font-size: 30px;
+            font-weight: bold;
+            color: #282828;
+            margin-bottom: 10px;
+        }
+        p{
+            color: #282828;
+        }
+    }
+}
